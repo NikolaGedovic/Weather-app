@@ -3,12 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather-App</title>
+    <title>Nikola's Weather</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="heading"><h1>Nikola's Weather</h1></div>
+      <div class="search">
+        <input type="text" placeholder="Enter Your City..." />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="toggle-units"></div>
+    </header>
+
+    <main class="main">
+      <div class="city-name">
+        <p class="display-city-name">Maribor</p>
+      </div>
+      <div class="current-weather-container"></div>
+      <div class="weather-five-days-container"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-github-link">
+        <p>Nikola Gedovic</p>
+      </div>
+      <div class="footer-weather-api-link">
+        Powered by
+        <span><a href="https://openweathermap.org/">Open Weather</a></span>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
