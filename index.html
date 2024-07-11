@@ -30,8 +30,58 @@
         />
         <button class="search-btn">Search</button>
       </div>
-      <div class="current-weather-container"></div>
-      <div class="weather-five-days-container"></div>
+      <div class="current-weather-container">
+        <div class="current-weather-heading">
+          <h2>Current Weather</h2>
+        </div>
+        <div class="current-weather-sections-container">
+          <div class="temperature current-weather-sections">Temperature</div>
+          <div class="feels-like current-weather-sections">Feels Like</div>
+          <div class="pressure current-weather-sections">Pressure</div>
+          <div class="humidity current-weather-sections">Humidity</div>
+          <div class="wind-speed current-weather-sections">Wind Speed</div>
+          <div class="change-of-rain current-weather-sections">
+            Chance Of Rain
+          </div>
+        </div>
+      </div>
+      <div class="weather-five-days-container">
+        <div class="five-days-heading">
+          <h2>Weather In 5 Days</h2>
+        </div>
+        <div class="five-days-container">
+          <div class="day-1 five-days-sections">
+            <div class="day-of-week-1">Day 1</div>
+            <div class="min-temp-1">Min temp</div>
+            <div class="max-temp-1">Max temp</div>
+            <div class="wind-speed-1">Wind speed</div>
+          </div>
+          <div class="day-2 five-days-sections">
+            <div class="day-of-week-2">Day 2</div>
+            <div class="min-temp-2">Min temp</div>
+            <div class="max-temp-2">Max temp</div>
+            <div class="wind-speed-2">Wind speed</div>
+          </div>
+          <div class="day-3 five-days-sections">
+            <div class="day-of-week-3">Day 3</div>
+            <div class="min-temp-3">Min temp</div>
+            <div class="max-temp-3">Max temp</div>
+            <div class="wind-speed-3">Wind speed</div>
+          </div>
+          <div class="day-4 five-days-sections">
+            <div class="day-of-week-4">Day 4</div>
+            <div class="min-temp-4">Min temp</div>
+            <div class="max-temp-4">Max temp</div>
+            <div class="wind-speed-4">Wind speed</div>
+          </div>
+          <div class="day-5 five-days-sections">
+            <div class="day-of-week-5">Day 5</div>
+            <div class="min-temp-5">Min temp</div>
+            <div class="max-temp-5">Max temp</div>
+            <div class="wind-speed-5">Wind speed</div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-github-link">
@@ -39,7 +89,9 @@
       </div>
       <div class="footer-weather-api-link">
         Powered by
-        <span><a href="https://openweathermap.org/">Open Weather</a></span>
+        <span>
+          <a href="https://openweathermap.org/">Open Weather</a>
+        </span>
       </div>
     </footer>
     <script src="script.js"></script>
