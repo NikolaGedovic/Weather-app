@@ -10,10 +10,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="heading"><h1>Nikola's Weather</h1></div>
-      <div class="search">
-        <input type="text" placeholder="Enter Your City..." />
-        <button class="search-btn">Search</button>
+      <div class="heading">
+        <a href="index.html">
+          <h1>Nikola's Weather</h1>
+        </a>
       </div>
       <div class="toggle-units"></div>
     </header>
@@ -21,6 +21,14 @@
     <main class="main">
       <div class="city-name">
         <p class="display-city-name">Maribor</p>
+      </div>
+      <div class="search">
+        <input
+          class="user-input"
+          type="text"
+          placeholder="Enter Your City..."
+        />
+        <button class="search-btn">Search</button>
       </div>
       <div class="current-weather-container"></div>
       <div class="weather-five-days-container"></div>

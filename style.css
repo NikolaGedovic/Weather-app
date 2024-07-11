@@ -15,15 +15,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 2rem;
+  padding: 0.8rem 1.8rem;
   background-color: #31363f;
 }
 
 .toggle-units {
-  width: 40px;
+  width: 100px;
   height: 40px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 0.8rem;
 }
 
 /* Main */
@@ -35,7 +35,11 @@ body {
 
 .display-city-name {
   font-size: 3rem;
-  margin: 1.5rem 0;
+  margin: 1.8rem 0 0.8rem 0;
+}
+
+.search {
+  margin-bottom: 1.8rem;
 }
 
 .current-weather-container {
