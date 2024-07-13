@@ -1,3 +1,15 @@
+:root {
+  --header-clr: #1c7f5a;
+  --bg-clr: #d7f4e3;
+  --cards-clr: #b3e7cc;
+  --heading-clr: #09251d;
+  --font-clr: #114232;
+
+  --cards-font: "Nunito", sans-serif;
+  --city-display-font: "Manrope", sans-serif;
+  --headings-font: "Playfair Display", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +19,7 @@
 }
 
 body {
-  background-color: #344c64;
+  background-color: var(--bg-clr);
 }
 
 /* Header  */
@@ -16,7 +28,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1.8rem;
-  background-color: #31363f;
+  background-color: var(--header-clr);
+}
+
+.heading-link-home {
+  text-decoration: none;
+}
+
+.name-heading {
+  color: var(--heading-clr);
+  font-size: 2.3rem;
+  font-family: var(--headings-font);
 }
 
 .toggle-units {
@@ -36,6 +58,9 @@ body {
 .display-city-name {
   font-size: 3rem;
   margin: 1.8rem 0 0.8rem 0;
+  font-size: 3.5rem;
+  color: var(--heading-clr);
+  font-family: var(--city-display-font);
 }
 
 .search {
@@ -47,7 +72,7 @@ body {
 .current-weather-container {
   height: 280px;
   width: 800px;
-  background-color: brown;
+  background-color: var(--cards-clr);
   display: flex;
   flex-direction: column;
 }
@@ -58,10 +83,18 @@ body {
   padding: 1.2rem 0;
 }
 
+.card-headings {
+  font-size: 1.9rem;
+  color: var(--heading-clr);
+  font-family: var(--headings-font);
+}
+
 .current-weather-sections-container {
   display: flex;
   height: 100%;
   width: 100%;
+  color: var(--font-clr);
+  font-family: var(--cards-font);
 }
 
 .current-weather-sections {
@@ -74,7 +107,7 @@ body {
   height: 280px;
   width: 80%;
   margin-top: 2rem;
-  background-color: brown;
+  background-color: var(--cards-clr);
 }
 
 /* Weather in 5 days */
@@ -98,11 +131,13 @@ body {
   flex-direction: column;
   width: 20%;
   height: 100%;
+  color: var(--font-clr);
+  font-family: var(--cards-font);
 }
 
 /* Footer */
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;

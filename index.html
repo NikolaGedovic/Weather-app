@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikola's Weather</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <div class="heading">
-        <a href="index.html">
-          <h1>Nikola's Weather</h1>
+        <a class="heading-link-home" href="index.html">
+          <h1 class="name-heading">Nikola's Weather</h1>
         </a>
       </div>
       <div class="toggle-units"></div>
@@ -32,7 +40,7 @@
       </div>
       <div class="current-weather-container">
         <div class="current-weather-heading">
-          <h2>Current Weather</h2>
+          <h2 class="card-headings">Current Weather</h2>
         </div>
         <div class="current-weather-sections-container">
           <div class="temperature current-weather-sections">Temperature</div>
@@ -47,7 +55,7 @@
       </div>
       <div class="weather-five-days-container">
         <div class="five-days-heading">
-          <h2>Weather In 5 Days</h2>
+          <h2 class="card-headings">Weather In 5 Days</h2>
         </div>
         <div class="five-days-container">
           <div class="day-1 five-days-sections">
