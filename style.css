@@ -4,6 +4,10 @@
   --cards-clr: #b3e7cc;
   --heading-clr: #09251d;
   --font-clr: #114232;
+
+  --cards-font: "Nunito", sans-serif;
+  --city-display-font: "Manrope", sans-serif;
+  --headings-font: "Playfair Display", sans-serif;
 }
 
 * {
@@ -34,6 +38,7 @@ body {
 .name-heading {
   color: var(--heading-clr);
   font-size: 2.3rem;
+  font-family: var(--headings-font);
 }
 
 .toggle-units {
@@ -55,6 +60,7 @@ body {
   margin: 1.8rem 0 0.8rem 0;
   font-size: 3.5rem;
   color: var(--heading-clr);
+  font-family: var(--city-display-font);
 }
 
 .search {
@@ -80,6 +86,7 @@ body {
 .card-headings {
   font-size: 1.9rem;
   color: var(--heading-clr);
+  font-family: var(--headings-font);
 }
 
 .current-weather-sections-container {
@@ -87,6 +94,7 @@ body {
   height: 100%;
   width: 100%;
   color: var(--font-clr);
+  font-family: var(--cards-font);
 }
 
 .current-weather-sections {
@@ -124,6 +132,7 @@ body {
   width: 20%;
   height: 100%;
   color: var(--font-clr);
+  font-family: var(--cards-font);
 }
 
 /* Footer */
