@@ -57,14 +57,70 @@ body {
 
 .display-city-name {
   font-size: 3rem;
-  margin: 1.8rem 0 0.8rem 0;
+  margin: 0.8rem 0 0.8rem 0;
   font-size: 3.5rem;
   color: var(--heading-clr);
   font-family: var(--city-display-font);
 }
 
-.search {
-  margin-bottom: 1.8rem;
+form {
+  position: relative;
+  margin: 0 0 10px 0;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--header-clr);
+  transform: all 1s;
+}
+
+form:hover {
+  width: 300px;
+  cursor: pointer;
+}
+
+form:hover input {
+  display: block;
+}
+
+form:hover .fa {
+  background-color: var(--header-clr);
+  color: white;
+}
+
+form:hover .fa:active {
+  background-color: var(--font-clr);
 }
 
 /* Current Weather */
