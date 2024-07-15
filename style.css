@@ -41,11 +41,92 @@ body {
   font-family: var(--headings-font);
 }
 
-.toggle-units {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  border-radius: 0.8rem;
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  display: inline-block;
+  text-align: left;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  border: 2px solid #114232;
+  border-radius: 30px;
+  background-color: #b3e7cc;
+  transition: background-color 0.3s ease-in;
+}
+
+.toggle-label .toggle-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in;
+}
+
+.toggle-label .toggle-inner:before,
+.toggle-label .toggle-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 16px; /* Increased font size */
+  font-weight: bold; /* Made text bold */
+  color: #114232;
+  font-family: Trebuchet, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.toggle-label .toggle-inner:before {
+  content: "°C";
+  padding-left: 10px;
+  background-color: #d7f4e3;
+  color: #114232;
+}
+
+.toggle-label .toggle-inner:after {
+  content: "°F";
+  padding-right: 10px;
+  background-color: #b3e7cc;
+  color: #114232;
+  text-align: right;
+}
+
+.toggle-label .toggle-switch {
+  display: block;
+  width: 22px;
+  margin: 4px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  border: 2px solid #114232;
+  border-radius: 30px;
+  transition: all 0.3s ease-in;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #114232;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  margin-left: 0;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-switch {
+  right: 0px;
+  border-color: #114232;
 }
 
 /* Main */
