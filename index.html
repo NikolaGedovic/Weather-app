@@ -13,6 +13,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -23,21 +29,24 @@
           <h1 class="name-heading">Nikola's Weather</h1>
         </a>
       </div>
-      <div class="toggle-units"></div>
+      <div class="toggle-switch">
+        <input type="checkbox" id="tempToggle" class="toggle-checkbox" />
+        <label for="tempToggle" class="toggle-label">
+          <span class="toggle-inner"></span>
+          <span class="toggle-switch"></span>
+        </label>
+      </div>
     </header>
 
     <main class="main">
       <div class="city-name">
         <p class="display-city-name">Maribor</p>
       </div>
-      <div class="search">
-        <input
-          class="user-input"
-          type="text"
-          placeholder="Enter Your City..."
-        />
-        <button class="search-btn">Search</button>
-      </div>
+
+      <form action="" class="search-container">
+        <input class="user-input" type="text" placeholder="Search here..." />
+        <i class="fa fa-search"></i>
+      </form>
       <div class="current-weather-container">
         <div class="current-weather-heading">
           <h2 class="card-headings">Current Weather</h2>
