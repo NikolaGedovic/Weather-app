@@ -207,8 +207,7 @@ form:hover .fa:active {
 /* Current Weather */
 
 .current-weather-container {
-  height: 280px;
-  width: 800px;
+  width: 65rem;
   background-color: var(--cards-clr);
   display: flex;
   flex-direction: column;
@@ -238,6 +237,27 @@ form:hover .fa:active {
   width: 16.67%;
   height: 100%;
   text-align: center;
+  margin: 0 0.5rem;
+}
+
+.temperature-heading,
+.feels-like-heading,
+.pressure-heading,
+.humidity-heading,
+.wind-speed-heading,
+.chance-of-rain-heading {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.temperature-text,
+.feels-like-text,
+.pressure-text,
+.humidity-text,
+.wind-speed-text,
+.chance-of-rain-text {
+  font-size: 1.5rem;
+  padding: 2rem 0;
 }
 
 .weather-five-days-container {
