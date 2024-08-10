@@ -325,3 +325,14 @@ form:hover .fa:active {
   align-items: center;
   margin: 3.125rem 0 0.625rem 0;
 }
+
+.footer-link,
+.footer-github-link {
+  text-decoration: none;
+  color: var(--header-clr);
+}
+
+.footer-link:hover,
+.footer-github-link:hover {
+  color: var(--font-clr);
+}
