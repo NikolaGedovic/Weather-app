@@ -1,9 +1,144 @@
+:root {
+  --city-name: "Bona Nova SC";
+  --paragraphs: "PT Serif";
+  --numbers: "Karla";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url(/nature-bg-big.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin-bottom: 4.4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.input-text {
+  padding: 0.6rem;
+  width: 18rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-family: var(--city-name);
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--paragraphs);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: wheat;
+}
+
+.card {
+  width: 50rem;
+  height: 30rem;
+  margin-bottom: 3.4rem;
+  background: rgba(51, 90, 4, 0.75);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.city-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-family: var(--city-name);
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+.temperatures-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.temperature,
+.feels-like-temperature {
+  font-size: 1.8rem;
+  font-family: var(--paragraphs);
+}
+
+.other-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pressure,
+.humidity,
+.wind-speed {
+  font-size: 1.8rem;
+}
+
+.temperature > span,
+.feels-like-temperature > span,
+.pressure > span,
+.humidity > span,
+.wind-speed > span {
+  font-weight: bold;
+  font-family: var(--numbers);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  color: wheat;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-link:hover {
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 1375px) {

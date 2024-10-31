@@ -7,16 +7,57 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,200..800;1,200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">
-      <form action="#">
-        <input type="text" placeholder="Enter City Name..." />
-        <button>Search City</button>
+      <form action="#" class="search">
+        <input
+          class="input-text"
+          type="text"
+          placeholder="Enter City Name..."
+        />
+        <button class="button">Search City</button>
       </form>
-      <div class="card"></div>
+      <div class="card">
+        <div class="city-name">Maribor</div>
+        <div class="weather-icon">
+          <i class="fa-solid fa-umbrella icon"></i>
+        </div>
+        <div class="temperatures-section">
+          <div class="temperature">Current Temperature: <span>25C</span></div>
+          <div class="feels-like-temperature">Feels Like: <span>23C</span></div>
+        </div>
+        <div class="other-info">
+          <div class="pressure">Pressure: <span>1020mb</span></div>
+          <div class="humidity">Humidity: <span>56%</span></div>
+          <div class="wind-speed">Wind Speed: <span>12km/h</span></div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <a
+        class="footer-link"
+        href="https://github.com/NikolaGedovic"
+        target="_blank"
+      >
+        Nikola Gedović
+        <i class="fa-brands fa-github footer-icon"></i>
+      </a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
