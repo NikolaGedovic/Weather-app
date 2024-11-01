@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -69,7 +70,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.city-name {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,5 +145,72 @@ footer {
 @media screen and (max-width: 1375px) {
   body {
     background-image: url(/nature-bg-small.jpg);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+  }
+
+  .city {
+    padding-top: 0.6rem;
+  }
+
+  .weather-icon {
+    margin-bottom: 3.2rem;
+  }
+
+  .temperatures-section {
+    gap: 0.5rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .other-info {
+    gap: 0.5rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .city {
+    font-size: 2.7rem;
+  }
+
+  .icon {
+    font-size: 4rem;
+  }
+
+  .temperature,
+  .feels-like-temperature,
+  .pressure,
+  .humidity,
+  .wind-speed {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .search {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .city {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .temperature,
+  .feels-like-temperature,
+  .pressure,
+  .humidity,
+  .wind-speed {
+    font-size: 0.8rem;
   }
 }
